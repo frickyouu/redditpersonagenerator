@@ -1,17 +1,14 @@
-AI-Powered Reddit Persona Generator
-<p align="center">
-<img src="https://placehold.co/600x300/1e293b/ffffff?text=AI+Reddit+Persona+Generator&font=raleway" alt="Project Banner">
-</p>
+# AI-Powered Reddit Persona Generator
 
 An advanced command-line tool that leverages the power of Google's Gemini AI to create detailed, structured user personas from a Reddit user's public comment and submission history.
 
-Overview
+## Overview
 This project provides a seamless workflow to analyze a Reddit user's online behavior and generate a comprehensive persona. It automates the process of data collection via the Reddit API and performs sophisticated analysis using a specifically engineered prompt for the Gemini LLM. The final output is a detailed text file outlining the user's inferred demographics, personality traits, motivations, goals, and frustrations, with every point justified by a direct quote from the user's history.
 
 This tool is perfect for user research, market analysis, or anyone interested in applying LLMs to understand digital behavior.
 
 Features
-AI-Powered Analysis: Utilizes Google's gemini-1.5-flash model for nuanced and detailed persona generation.
+AI-Powered Analysis: Utilizes Google's ```gemini-1.5-flash model``` for nuanced and detailed persona generation.
 
 Direct Reddit Integration: Uses the official Reddit API via PRAW to fetch the latest user comments and posts.
 
