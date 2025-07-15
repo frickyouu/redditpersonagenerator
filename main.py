@@ -1,14 +1,11 @@
 __version__ = "1.0"
 
-# main.py
-
 import os
 import re
 import argparse
 from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Import your functions from the other files
 from scraper import scrape_redditor_data
 from llm import generate_persona
 
@@ -29,14 +26,14 @@ def main():
         print("Error: Could not extract a valid username from the URL.")
         return
 
-    # Call the imported scraper function
+    # Called the imported scraper function
     scraped_data = scrape_redditor_data(username)
 
     if not scraped_data:
         print(f"No data found for user '{username}'. Cannot generate a persona.")
         return
 
-    # Call the imported LLM function
+    # Called the imported LLM function
     persona = generate_persona(scraped_data, username)
 
     # Save the output
