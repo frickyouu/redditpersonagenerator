@@ -3,19 +3,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 
 def generate_persona(user_data: list, username: str):
-    """
-    Generates a user persona by sending scraped Reddit data to the Gemini API.
 
-    The prompt is specifically engineered to create a persona with a structure
-    based on the provided example image, including demographics, personality,
-    motivations, goals, and frustrations, with citations for each point.
-
-    Args:
-        user_data: A list of strings, where each string is a user's post or comment.
-
-    Returns:
-        A string containing the generated user persona.
-    """
     model = genai.GenerativeModel('gemini-1.5-flash')
     
     combined_data = "\n\n".join(user_data)
